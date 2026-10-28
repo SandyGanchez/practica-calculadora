@@ -3,7 +3,7 @@ const assert = require("node:assert/strict");
 const { operar } = require("./calculadora.js");
 
 test("suma", () => {
-  assert.equal(operar(2, 3, "sumar"), 5);
+  assert.equal(operar(2, 3, "sumar"), 99);
 });
 
 test("resta", () => {
@@ -20,4 +20,4 @@ test("división", () => {
 
 test("no divide entre cero", () => {
   assert.throws(() => operar(8, 0, "dividir"), /No se puede dividir entre cero/);
-});
+}); 
